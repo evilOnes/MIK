@@ -44,9 +44,10 @@
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(493, 12);
+            this.btn_edit.Location = new System.Drawing.Point(657, 15);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(112, 43);
+            this.btn_edit.Size = new System.Drawing.Size(149, 53);
             this.btn_edit.TabIndex = 6;
             this.btn_edit.Text = "Редактирование";
             this.btn_edit.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // 
             // btn_new
             // 
-            this.btn_new.Location = new System.Drawing.Point(12, 12);
+            this.btn_new.Location = new System.Drawing.Point(16, 15);
+            this.btn_new.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_new.Name = "btn_new";
-            this.btn_new.Size = new System.Drawing.Size(112, 43);
+            this.btn_new.Size = new System.Drawing.Size(149, 53);
             this.btn_new.TabIndex = 5;
             this.btn_new.Text = "Создание новой заявки";
             this.btn_new.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(209, 18);
+            this.label3.Location = new System.Drawing.Point(279, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 26);
+            this.label3.Size = new System.Drawing.Size(229, 31);
             this.label3.TabIndex = 14;
             this.label3.Text = "Список клиентов";
             // 
@@ -77,10 +80,11 @@
             this.dgv_clients.AllowUserToAddRows = false;
             this.dgv_clients.AllowUserToDeleteRows = false;
             this.dgv_clients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_clients.Location = new System.Drawing.Point(3, 32);
+            this.dgv_clients.Location = new System.Drawing.Point(4, 40);
+            this.dgv_clients.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_clients.Name = "dgv_clients";
             this.dgv_clients.ReadOnly = true;
-            this.dgv_clients.Size = new System.Drawing.Size(587, 238);
+            this.dgv_clients.Size = new System.Drawing.Size(783, 292);
             this.dgv_clients.TabIndex = 15;
             // 
             // tableLayoutPanel1
@@ -89,22 +93,24 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.dgv_clients, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.toolStrip1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 109);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 134);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(593, 273);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(791, 336);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_print,
             this.btn_delete});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(593, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(791, 27);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -114,7 +120,7 @@
             this.btn_print.Image = ((System.Drawing.Image)(resources.GetObject("btn_print.Image")));
             this.btn_print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(23, 22);
+            this.btn_print.Size = new System.Drawing.Size(24, 24);
             this.btn_print.Text = "Печать";
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
@@ -122,22 +128,24 @@
             // 
             this.btn_delete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
+            this.btn_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_delete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_delete.Margin = new System.Windows.Forms.Padding(500, 1, 0, 2);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(23, 22);
+            this.btn_delete.Size = new System.Drawing.Size(24, 24);
             this.btn_delete.Text = "Удалить выбранную запись";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // ClientsList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 423);
+            this.ClientSize = new System.Drawing.Size(823, 521);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_new);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClientsList";
             this.Text = "Список клиентов";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientsList_FormClosing);

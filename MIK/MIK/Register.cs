@@ -19,7 +19,11 @@ namespace MIK
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-
+            ClientsList.Open();
+            ClientsList.cmd.CommandText = "insert into user (ulogin, upass) values ('" + tb_login.Text + "', '" + tb_pwd.Text + "')";
+            ClientsList.cmd.ExecuteNonQuery();
+            ClientsList.c.Close();
+            MessageBox.Show("Регистрация прошла успешно.");
         }
     }
 }
